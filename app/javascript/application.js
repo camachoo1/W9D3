@@ -10,8 +10,8 @@ if (process.env.NODE_ENV !== "production") {
   window.API = API;
 }
 
-let followToggleSelector = "";
-let infiniteTweetsSelector = "";
+let followToggleSelector = "button.follow-toggle";
+let infiniteTweetsSelector = ".infinite-tweets";
 let usersSearchSelector = "";
 let tweetComposeSelector = "";
 let followersSelector = "";
@@ -19,20 +19,22 @@ let followersSelector = "";
 
 document.querySelectorAll(followToggleSelector).forEach((el) => {
   new FollowToggle(el);
+  console.log(el);
 });
 
 document.querySelectorAll(infiniteTweetsSelector).forEach((el) => {
   new InfiniteTweets(el);
+  console.log(el)
 });
 
-document.querySelectorAll(usersSearchSelector).forEach((el) => {
-  new UsersSearch(el);
-});
+// document.querySelectorAll(usersSearchSelector).forEach((el) => {
+//   new UsersSearch(el);
+// });
 
-document.querySelectorAll(tweetComposeSelector).forEach((el) => {
-  new TweetCompose(el);
-});
+// document.querySelectorAll(tweetComposeSelector).forEach((el) => {
+//   new TweetCompose(el);
+// });
 
-document.querySelectorAll(followersSelector).forEach((el) => {
-  new Followers(el);
-});
+// document.querySelectorAll(followersSelector).forEach((el) => {
+//   new Followers(el);
+// });

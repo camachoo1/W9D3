@@ -185,4 +185,4 @@ familiarize yourself with the application. Also look through the source code,
 including the routes, views, and database schema!
 
 [`foreman`]: https://github.com/ddollar/foreman
-[localhost:3000]: http://localhost:3000# W9D3
+[localhost:3000]: http://localhost:3000
